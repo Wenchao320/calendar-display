@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="21600">
+<title>Daily Political Film Calendar</title>
+
+<style>
+body {
+    margin: 0;
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+.header {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 20px;
+    color: #ccc;
+}
+
+.release-date {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #cccccc;
+}
+
+.today-date {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+.container {
+    width: 800px;
+    height: 480px;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.poster {
+    width: 300px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.poster img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.content {
+    flex: 1;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+.commentary {
+    font-size: 22px;
+    line-height: 1.4;
+    animation: fadeIn 2s ease-in;
+}
+
+.news {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    font-size: 14px;
+    color: #66ccff;
+    animation: ticker 15s linear infinite;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(50px); opacity: 0 }
+    to { transform: translateX(0); opacity: 1 }
+}
+
+@keyframes ticker {
+    0% { transform: translateX(100%) }
+    100% { transform: translateX(-100%) }
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+    <div class="today-date">
+        February 24, 2026
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="poster">
+        <img src="https://image.tmdb.org/t/p/w500/pN38R3xfr5J5Cqn66NA257BPocc.jpg">
+        <div class="release-date">
+            Released: 1970-02-24
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="title">Assignment Terror</div>
+        <div class="commentary">As US tourists are stuck in a Mexican beach town due to violence, it's fitting that "Assignment Terror" is about aliens preying on human superstitions to conquer Earth. The film's theme of exploiting fears mirrors how politicians often use anxiety and uncertainty to further their agendas. It's a timely reminder of the dangers of manipulation.</div>
+    </div>
+
+</div>
+
+<div class="news">
+    ['US tourists stuck in Mexican beach town after drug lord’s killing sparks wave of violence. Follow live updates - CNN', 'Australia backs removing Andrew from royal line of succession - BBC', 'New research suggests some cases of autism could be preventable - The Washington Post', 'Scoop: Hegseth to meet Anthropic CEO as Pentagon threatens banishment - Axios', 'As more Americans embrace anxiety treatment, RFK Jr. derides medications - CBS News', 'The owners want to close this Colorado coal plant. The Trump administration says no - NPR', 'Trump’s law is crushing the next generation of RFK Jr. disciples - Politico', 'Dear Abby: My family won’t get vaccinated to see my baby - New York Post', 'Stock futures fall amid uncertainty about Trump new tariffs: Live updates - CNBC', 'Horoscope for Monday, February 23, 2026 - Chicago Sun-Times', 'Starting on the right foot: Sounders top Rapids in opener - Sounder at Heart', 'How Trump will use his State of the Union address to sell skeptical midterm voters on his plans - AP News', 'A viral monkey, his plushie, and a 70-year-old experiment: what Punch tells us about attachment theory - The Conversation', 'No. 3 Oklahoma State outscores No. 7 Iowa wrestling 32-11 in electric final home performance of the year - NCAA.com', 'Oil Traders May Be Pricing Iran Risk Too Lightly - Crude Oil Prices Today | OilPrice.com', 'NASA Officially Classifies Boeing Starliner Failure As A Maximum-Level Type A Mishap - Jalopnik', 'Following a whiplash transition from record warmth to very heavy mountain snowfall in California, yet another swing back toward anomalous warmth (first damp, then dry) - Weather West']
+</div>
+
+</body>
+</html>
